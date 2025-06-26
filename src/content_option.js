@@ -107,9 +107,9 @@ const dataportfolio = [
         link: "#",
     },
     {
-        img: "https://picsum.photos/400/300/?grayscale",
+        img: "https://play-lh.googleusercontent.com/vUJ1ryn6VtXcKj5EjaPIIBNckMiufoRHtClzhg8xwrc7RFJLWpIFNPAx7YxY3jEiYA=w526-h296-rw",
         description: "RestroX – Comprehensive restaurant management system for order, inventory, and analytics. (BlackTech)",
-        link: "#",
+        link: "https://play.google.com/store/apps/details?id=co.restrox.app&hl=en",
     },
     {
         img: "https://picsum.photos/400/700/?grayscale",
@@ -132,6 +132,7 @@ const dataportfolio = [
         link: "https://github.com/the-null-pointers",
     },
 ];
+
 
 const contactConfig = {
     YOUR_EMAIL: "sandeshchapagai25@gmail.com",
