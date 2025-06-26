@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/porfioo/static/css/main.fbc00891.css",
-    "main.js": "/porfioo/static/js/main.509269ac.js",
-    "index.html": "/porfioo/index.html"
+    "main.css": "/static/css/main.fbc00891.css",
+    "main.js": "/static/js/main.fb09e9e9.js",
+    "index.html": "/index.html"
   },
   "entrypoints": [
     "static/css/main.fbc00891.css",
-    "static/js/main.509269ac.js"
+    "static/js/main.fb09e9e9.js"
   ]
 }
