@@ -1,3 +1,5 @@
+import medicineReminder from './assets/project/medicine_reminder_app.png';
+
 const logotext = "SanDesh";
 const meta = {
     title: "Sandesh Chapagai",
@@ -12,13 +14,14 @@ const introdata = {
         third: "I build robust, scalable mobile apps",
     },
     description: "Passionate Flutter developer with over 2.5 years of experience designing and delivering innovative, user-centric mobile applications. Skilled in BLE integration, real-time device control, and building high-quality, scalable solutions for diverse industries.",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    your_img_url: "https://unsplash.com/photos/macbook-pro-on-black-wooden-table-PNbDkQ2DDgM",
 };
 
 const dataabout = {
     title: "A bit about myself",
     aboutme: "I am a Flutter developer with a BSc.CSIT from Prithvi Narayan Campus, Pokhara. My expertise includes designing and delivering user-centric mobile applications such as medicine reminder apps, government information displays, restaurant management systems, and trek package navigation platforms. I have strong technical knowledge, hands-on experience with BLE and real-time device control, and a commitment to building high-quality, scalable solutions. I am actively seeking opportunities to contribute to impactful and cutting-edge Flutter projects.",
 };
+
 
 const worktimeline = [
     {
@@ -87,7 +90,8 @@ const services = [
 
 const dataportfolio = [
     {
-        img: "https://picsum.photos/400/?grayscale",
+        img: medicineReminder,
+
         description: "Medicine Reminder App – A Flutter app for managing medication schedules with timely reminders. (Pine Software)",
         link: "#",
     },
