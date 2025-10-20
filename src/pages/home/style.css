@@ -14,7 +14,8 @@ section {
 
 /* Intro Section */
 .intro_sec {
-        margin-top: 200px;
+    margin-top: 200px;
+    /* gap on desktop */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,9 +23,9 @@ section {
     text-align: center;
     height: 100vh;
     min-height: 700px;
-
     padding: 20px;
-    color: #fff;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 /* Profile Image */
@@ -59,12 +60,14 @@ section {
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 20px;
+    color: var(--text-color);
 }
 
 .intro_sec .text p {
     font-size: 16px;
     margin-bottom: 30px;
     line-height: 1.6;
+    color: var(--text-color);
 }
 
 /* Buttons */
@@ -88,19 +91,20 @@ section {
 }
 
 .ac_btn:hover {
-    background: var(--secondary-color);
+    background-color: var(--secondary-color);
     color: var(--primary-color);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive */
+/* Responsive Layout */
 @media (max-width: 768px) {
     .intro_sec {
+        margin-top: 50px;
+        /* reduced gap on tablet */
         height: auto;
         min-height: 100vh;
         padding: 40px 20px;
-        margin-top: 0px;
     }
 
     .profile-img {
@@ -121,7 +125,11 @@ section {
     .intro_btn-action {
         flex-direction: column;
         gap: 10px;
-  
         margin-bottom: 20px;
+    }
+
+    .intro_sec {
+        margin-top: 30px;
+        /* small gap for mobile */
     }
 }
