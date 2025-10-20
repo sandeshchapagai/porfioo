@@ -1,4 +1,5 @@
 import medicineReminder from './assets/project/medicine_reminder_app.png';
+import photoMe from './assets/images/my_photo.jpeg';
 
 const logotext = "SanDesh";
 const meta = {
@@ -8,13 +9,13 @@ const meta = {
 
 const introdata = {
     title: "I’m Sandesh Chapagai",
+    photo: photoMe,
     animated: {
         first: "Passionate Flutter Developer",
-        second: "3+ years of experience in mobile development",
+        second: "2.5+ years of experience in mobile development",
         third: "I build robust, scalable mobile apps",
     },
     description: "Passionate Flutter developer with over 2.5 years of experience designing and delivering innovative, user-centric mobile applications. Skilled in BLE integration, real-time device control, and building high-quality, scalable solutions for diverse industries.",
-    your_img_url: "https://unsplash.com/photos/macbook-pro-on-black-wooden-table-PNbDkQ2DDgM",
 };
 
 const dataabout = {
@@ -90,51 +91,42 @@ const services = [
 
 const dataportfolio = [
     {
+        img: "https://play-lh.googleusercontent.com/2wrSr-AsS_caaOFClv-cUsQWREf2t6HeL6uVMS6QPEJh9n_oHIP3gV_hy5VHqjuWc5E=w1052-h592-rw",
+        description: "RestroX – Comprehensive restaurant management system for order, inventory, and analytics. (BlackTech)",
+        link: "https://play.google.com/store/apps/details?id=co.restrox.app&hl=en",
+    },
+    {
+        img: "https://play-lh.googleusercontent.com/TiDtyDt_HuK2ugdbfCInLYzVELpwEV3v9GLthCAoRAxsBx0S_wf2Qzq0LjiVICrN7sw=w5120-h2880-rw",
+        description: "Simple Patro - handy nepali calender. (BlackTech)",
+        link: "https://play.google.com/store/apps/details?id=com.simplepatro.app&hl=ne",
+    },
+    {
+        img: "https://play-lh.googleusercontent.com/CXTTYx-8u-kZtzlKvXyKGJkY-tnseuoUk4Nd1Q4oXp7m96snqdZIEzbsPtUqitKMSkc=w5120-h2880-rw",
+        description: "Goreto – Trek package booking and navigation app with integrated marketplace. (Xyphor Technology)",
+        link: "https://play.google.com/store/search?q=goreto&c=apps&hl=en",
+    },
+    {
+        img: "https://play-lh.googleusercontent.com/-Ux9ikfe4qyXY4OUcpWbYDkiCdR9CkpFOPv2zunVQVmEattfEjJi2AqtVuqk_n1cc7k=w1052-h592-rw",
+        description: "Lions Club District 325M App – Event management and member directory app with real-time sync. (Websoft Technology Nepal)",
+        link: "https://play.google.com/store/apps/details?id=com.teispace.lions325M&hl=en",
+    },
+    {
+        img: "https://play-lh.googleusercontent.com/2mJOJb3lmQ8LHAbuYF5NkluF1PXywGjjdJMpy34RTVVL_Ad-3gVhqXT6tDyix9Vf-tg=w5120-h2880-rw",
+        description: "Soura Connect – BLE controller app for Point Pressure devices, enabling real-time hardware management. (MarginTop Technology)",
+        link: "https://play.google.com/store/apps/details?id=com.pointpressure.android&hl=en",
+    },
+    {
         img: medicineReminder,
 
         description: "Medicine Reminder App – A Flutter app for managing medication schedules with timely reminders. (Pine Software)",
         link: "#",
     },
-    {
-        img: "https://picsum.photos/400/800/?grayscale",
-        description: "Nagarik Badapatra App – Large-screen Flutter app for government office announcements and news. (Pine Software)",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "Lions Club District 325M App – Event management and member directory app with real-time sync. (Websoft Technology Nepal)",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "E-commerce App – Cross-platform Flutter app with product listings, cart, and authentication. (Personal Project)",
-        link: "#",
-    },
-    {
-        img: "https://play-lh.googleusercontent.com/vUJ1ryn6VtXcKj5EjaPIIBNckMiufoRHtClzhg8xwrc7RFJLWpIFNPAx7YxY3jEiYA=w526-h296-rw",
-        description: "RestroX – Comprehensive restaurant management system for order, inventory, and analytics. (BlackTech)",
-        link: "https://play.google.com/store/apps/details?id=co.restrox.app&hl=en",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "ALD Corporate – Construction and fitout services app for project tracking and team management. (BlackTech)",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "Goreto – Trek package booking and navigation app with integrated marketplace. (Xyphor Technology)",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "Soura Connect – BLE controller app for Point Pressure devices, enabling real-time hardware management. (MarginTop Technology)",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "Med Tracker – Centralized hospital management system, open source. (Final Year Project)",
-        link: "https://github.com/the-null-pointers",
-    },
+    
+  
+
+
+
+
 ];
 
 
@@ -149,7 +141,7 @@ const contactConfig = {
 
 const socialprofils = {
     github: "https://github.com/sandeshchapagai",
-    facebook: "https://facebook.com/sandeshchapagai",
+    facebook: "https://facebook.com/SanDesh.567890/",
     linkedin: "https://linkedin.com/in/sandeshchapagai",
     twitter: "https://twitter.com/sandeshchapagai",
     website: "https://www.sandeshchapagai.com.np",
