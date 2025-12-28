@@ -105,27 +105,7 @@ const dataportfolio = [
         description: "Goreto – Trek package booking and navigation app with integrated marketplace. (Xyphor Technology)",
         link: "https://play.google.com/store/search?q=goreto&c=apps&hl=en",
     },
-    {
-        img: "https://play-lh.googleusercontent.com/-Ux9ikfe4qyXY4OUcpWbYDkiCdR9CkpFOPv2zunVQVmEattfEjJi2AqtVuqk_n1cc7k=w1052-h592-rw",
-        description: "Lions Club District 325M App – Event management and member directory app with real-time sync. (Websoft Technology Nepal)",
-        link: "https://play.google.com/store/apps/details?id=com.teispace.lions325M&hl=en",
-    },
-    {
-        img: "https://play-lh.googleusercontent.com/2mJOJb3lmQ8LHAbuYF5NkluF1PXywGjjdJMpy34RTVVL_Ad-3gVhqXT6tDyix9Vf-tg=w5120-h2880-rw",
-        description: "Soura Connect – BLE controller app for Point Pressure devices, enabling real-time hardware management. (MarginTop Technology)",
-        link: "https://play.google.com/store/apps/details?id=com.pointpressure.android&hl=en",
-    },
-    {
-        img: medicineReminder,
-
-        description: "Medicine Reminder App – A Flutter app for managing medication schedules with timely reminders. (Pine Software)",
-        link: "#",
-    },
     
-  
-
-
-
 
 ];
 
