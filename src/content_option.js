@@ -91,6 +91,10 @@ const services = [
 
 const dataportfolio = [
     {
+    img:"https://play-lh.googleusercontent.com/JoJTiX9_xY1OGogvG_kkhnFnTxboGS3abpnOvhgg6pbD--YUCWUYcZt1l-k6d8hi7v2hYAvhMTbg5rrVOwOaMYI=w480-h960-rw",
+        description: "Nobigo — Learn Japanese designed for Nepali learners heading to Japan",
+        link: "https://play.google.com/store/apps/details?id=com.Darkmatter.Language&hl=en&pli=1",
+    },    {
         img: "https://play-lh.googleusercontent.com/2wrSr-AsS_caaOFClv-cUsQWREf2t6HeL6uVMS6QPEJh9n_oHIP3gV_hy5VHqjuWc5E=w1052-h592-rw",
         description: "RestroX – Comprehensive restaurant management system for order, inventory, and analytics. (BlackTech)",
         link: "https://play.google.com/store/apps/details?id=co.restrox.app&hl=en",
