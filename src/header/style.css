@@ -1,207 +1,147 @@
-.site__header {
-    top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.menu__button {
-    color: var(--text-color);
-}
-
-.menu__button:focus,
-.menu__button:hover {
-    color: var(--text-color);
-    box-shadow: unset;
-}
-
-.menu__button svg {
-    width: 2em;
-    height: 2em;
-    fill: var(--text-color-2);
-    color: var(--text-color-2);
-}
-
-.nav_ac {
-    padding: 5px 15px;
-    margin: 0;
-    border: unset;
-    background: var(--primary-color);
-    font-size: 1.25rem;
-    font-family: Marcellus;
-    color: var(--text-color-2);
-    line-height: 2;
-    height: 50px;
-    font-weight: bold;
-    z-index: 1000;
-}
-
-.nav_ac:hover {
-    color: var(--text-color-2);
-}
-
-.br-top,
-.br-bottom,
-.br-right,
-.br-left {
+.nav {
     position: fixed;
-    z-index: 999999;
-    background: var(--primary-color);
-}
-
-.br-top {
     top: 0;
-    height: 10px;
     left: 0;
-    width: 100%;
-}
-
-.br-bottom {
-    bottom: 0;
-    left: 0;
-    height: 10px;
-    width: 100%;
-}
-
-.br-right {
-    width: 10px;
     right: 0;
-    top: 0;
-    height: 100%;
+    z-index: 1000;
+    transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    border-bottom: 1px solid transparent;
 }
 
-.br-left {
-    width: 10px;
-    left: 0;
-    top: 0;
-    height: 100%;
+.nav.scrolled {
+    background: rgba(10, 14, 20, 0.72);
+    backdrop-filter: saturate(180%) blur(12px);
+    -webkit-backdrop-filter: saturate(180%) blur(12px);
+    border-bottom-color: var(--border);
 }
 
-.cortina__wrapper-menu {
+[data-theme="light"] .nav.scrolled {
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 66px;
+}
+
+.nav-brand {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 1.02rem;
+    color: var(--heading);
+    letter-spacing: -0.3px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--text);
     position: relative;
-    width: 100%;
-    padding-top: 5em;
-    padding-bottom: 3em;
-    height: 100%;
-    overflow-y: auto;
+    transition: color 0.2s ease;
 }
 
-.site__navigation {
-    height: 100%;
-    left: 0;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    visibility: hidden;
-}
-
-.menu__opend {
-    visibility: visible !important;
-}
-
-.main__menu_ul,
-.menu_right {
-    opacity: 0;
-    position: relative;
-    transition: 0.5s;
-    transition-delay: 0s;
-    visibility: hidden;
-    z-index: 100;
-}
-
-.menu_right {
-    text-align: center;
-}
-
-.site__navigation.menu__opend .main__menu_ul,
-.site__navigation.menu__opend .menu_right {
-    opacity: 1;
-    transition-delay: 0.6s;
-    visibility: visible;
-}
-
-.site__navigation .main__menu_ul li {
-    list-style: none;
-    margin: 10px 0;
-}
-
-.site__navigation .main__menu_ul li a {
-    color: var(--text-color);
-    display: block;
-    font-size: 2.5rem;
-    text-decoration: none;
-}
-
-.bg__menu {
+.nav-links a::after {
+    content: "";
     position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: var(--primary-color);
-    will-change: transform;
-    transform: translateY(-100%);
-    transition: .5s ease all;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    transition: width 0.25s ease;
 }
 
-.menu__opend .bg__menu {
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.theme-toggle {
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
+}
+
+.theme-toggle:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+.nav-burger {
+    display: none;
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    width: 38px;
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.nav-mobile {
+    position: fixed;
+    top: 66px;
+    left: 0;
+    right: 0;
+    background: var(--bg-elev);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    padding: 8px 24px 16px;
+    transform: translateY(-130%);
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: -1;
+}
+
+.nav-mobile.open {
     transform: translateY(0);
 }
 
-.menu__wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden auto;
+.nav-mobile a {
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    color: var(--text);
+    padding: 13px 4px;
+    border-bottom: 1px solid var(--border-soft);
 }
 
-.the_menu {
-    padding-top: 20vh;
-    padding-bottom: 20vh;
-    padding-left: 0;
+.nav-mobile a:last-child {
+    border-bottom: none;
 }
 
-@media (min-width: 992px) {
-    .menu__container {
-        margin-left: 33.3333%;
+@media (max-width: 820px) {
+    .nav-links {
+        display: none;
     }
-    .the_menu {
-        padding-top: 10vh;
-        padding-bottom: 10vh;
+    .nav-burger {
+        display: flex;
     }
-}
-
-.the_menu .menu_item>a {
-    color: var(--text-color-2);
-    line-height: 1;
-    font-size: 2rem;
-    display: inline-block;
-    position: relative;
-    transition: color 250ms cubic-bezier(0, 0, 0.58, 1) 0s;
-    padding: 4px 0px;
-    text-decoration: none;
-    font-family: Marcellus;
-}
-
-.the_menu .menu_item>a:hover {
-    color: var(--text-color-3);
-}
-
-@media (min-width: 768px) {
-    .the_menu .menu_item>a {
-        font-size: 4.8vw;
-    }
-}
-
-.menu_footer {
-    bottom: 0;
-    font-family: Marcellus;
-    font-size: 14px;
-    background: var(--primary-color);
-}
-
-.menu_footer a {
-    color: var(--text-color-2);
-    margin-right: 10px;
-    text-decoration: none;
 }
